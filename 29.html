@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Type Conversion Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .success {
+      color: green;
+      font-weight: bold;
+    }
+    .fail {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Data Type Conversion Table</h2>
+
+  <table>
+    <tr>
+      <th>From → To</th>
+      <th>Example Value</th>
+      <th>Conversion Code</th>
+      <th>Result</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>int → float</td>
+      <td>x = 10</td>
+      <td>float(x)</td>
+      <td>10.0</td>
+      <td class="success">✔ Converted</td>
+    </tr>
+    <tr>
+      <td>float → int</td>
+      <td>x = 10.5</td>
+      <td>int(x)</td>
+      <td>10</td>
+      <td class="success">✔ Converted</td>
+    </tr>
+    <tr>
+      <td>int → complex</td>
+      <td>x = 7</td>
+      <td>complex(x)</td>
+      <td>(7+0j)</td>
+      <td class="success">✔ Converted</td>
+    </tr>
+    <tr>
+      <td>float → complex</td>
+      <td>x = 8.9</td>
+      <td>complex(x)</td>
+      <td>(8.9+0j)</td>
+      <td class="success">✔ Converted</td>
+    </tr>
+    <tr>
+      <td>string → int</td>
+      <td>x = "abc"</td>
+      <td>int(x)</td>
+      <td>Error</td>
+      <td class="fail">✖ Not converting</td>
+    </tr>
+    <tr>
+      <td>string → float</td>
+      <td>x = "abc"</td>
+      <td>float(x)</td>
+      <td>Error</td>
+      <td class="fail">✖ Not converting</td>
+    </tr>
+    <tr>
+      <td>string → complex</td>
+      <td>x = "abc"</td>
+      <td>complex(x)</td>
+      <td>Error</td>
+      <td class="fail">✖ Not converting</td>
+    </tr>
+  </table>
+
+</body>
+</html>
